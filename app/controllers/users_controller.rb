@@ -19,6 +19,7 @@ class UsersController < ApplicationController
     @user.email = params[:email]
     @user.name = params[:name]
     @user.password = params[:password]
+    @user.save
     render json: @user, status: :created
   end
 
