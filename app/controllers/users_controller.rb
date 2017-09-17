@@ -9,7 +9,7 @@ class UsersController < ApplicationController
   # GET /users/1
   def show
     @user = User.find(params[:id])
-    render json: @users, status: :ok
+    render json: @user, status: :ok
   end
 
   # POST /users
